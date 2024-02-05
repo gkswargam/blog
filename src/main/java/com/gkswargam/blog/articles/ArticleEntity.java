@@ -33,7 +33,7 @@ public class ArticleEntity {
 
     @Column
     @Nullable
-    private String subtitle;
+    private String subTitle;
 
     @Column(nullable = false)
     @NonNull
@@ -43,6 +43,6 @@ public class ArticleEntity {
     private Date createdAt;
 
     @ManyToOne
-    @JoinColumn(name = "authordId", nullable = false)
+    @JoinColumn(name = "authorId", nullable = false)
     private UserEntity author;
 }

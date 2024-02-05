@@ -17,7 +17,7 @@ public class UsersRepositoryTests {
     @Test
     void can_create_users() {
         UserEntity userEntity = UserEntity.builder()
-                .username("test-user-1")
+                .userName("test-user-1")
                 .email("test-user-1@email.com")
                 .build();
         usersRepository.save(userEntity);
@@ -26,7 +26,7 @@ public class UsersRepositoryTests {
     @Test
     void can_find_all_users() {
         UserEntity userEntity = UserEntity.builder()
-                .username("test-user-1")
+                .userName("test-user-1")
                 .email("test-user-1@email.com")
                 .build();
         usersRepository.save(userEntity);
